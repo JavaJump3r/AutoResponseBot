@@ -17,7 +17,10 @@ namespace ChillBot
             if(!File.Exists(configDirectory))
             {
                 Console.WriteLine("Please create config.json or specify config using \"-config configfile.json\"");
-                Console.WriteLine("There is config example in program folder");
+                Console.Write("You can find example config at ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("https://raw.githubusercontent.com/JavaJump3r/AutoResponseBot/main/ChillBot/exampleConfig.json");
+                Console.ForegroundColor = ConsoleColor.White;
                 return;
             }
             string json = String.Join("", File.ReadAllLines(configDirectory));

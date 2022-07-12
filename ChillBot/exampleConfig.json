@@ -1,0 +1,26 @@
+{
+    "DiscordToken":"Token",
+    "AutoAnswers":[
+        {
+            "Matches":[
+                "Dog",
+                "Cat",
+				"Hampster",
+                "Parrot"
+            ], 
+            "MinimumMatchCount": 2,
+            "Answer": "Animals detected"
+        },
+        {
+            "Matches":[
+                "Carrot",
+                "Potato",
+                "Tomato",
+                "Pumpkin",
+                "Beet"
+            ],
+            "MinimumMatchCount": 3,
+            "Answer": "Vegetables detected"
+        }
+    ]
+}
